@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 15_08</title>
+</head>
+<body>
+    <form>
+        <label for="email">Seu Email:</label>
+        <input type="email" id="email" name="email" required placeholder="seuemail@site.com"
+            pattern="[a-b0-9._%+-]+@[a-b0-9.-]+\.[a-z]{2,4}$"><br>
+
+        <label for="passwd">Senha:</label>
+        <input type="password" id="passwd" name="passwd"><br>
+        
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" multiple required placeholder="https://www.exemple.com"
+            pattern="https?://.*"><br>
+        
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="(XX) XXXXX-XXXX"
+            pattern="\(\d{2}\) \d{5}-\d{4}"><br>
+
+        <label for="quant">Quantidade:</label>
+        <input type="number" size="3" id="quantity" name="quant" required
+            min="1" max="10" setp="1" value="1"><br>
+
+        <label for="dob">Data de Nascimento:</label>
+        <input type="date" id="dob" name="dob" required
+            min="01-01-1900" max="31-12-2999"><br>
+
+        <label for="color">Escolha uma cor:</label>
+        <input type="color" id="color" name="color" required
+            value="#ff0000"><br>
+
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" required
+            min="0" max="100" step="10" value="50"><br>
+
+        <label for="brightness">Brilho:</label>
+        <input type="range" id="brightness" name="brightness"
+            min="0" max="100" step="5" value="50"
+            list="tickmarks"><br>
+        <datalist id="tickmarks">
+            <option value="0">
+            <option value="25">
+            <option value="50">
+            <option value="75">
+            <option value="100">
+        </datalist>
+        
+        <label for="browser">Navegador:</label>
+        <input type="text" id="browser" name="browser"
+            list="browser"><br>
+        <datalist id="browser">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+        </datalist>
+
+        <label for="comments">Comentários:</label>
+        <textarea id="comments" name="comments"
+            rows="4" cols="40" placeholder="Digite seus comentários..."
+            required maxlength="200">
+        </textarea><br>
+
+        <input type="submit" value="Enviar"><br>
+        <input type="reset" value="Limpar">
+    </form>    
+</body>
+</html>
